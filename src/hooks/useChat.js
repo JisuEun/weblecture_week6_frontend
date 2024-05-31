@@ -9,7 +9,7 @@ export const useChat = (role) => {
         total: 0,
         today: 0
     });
-    const ENDPOINT = 'http://localhost:3001';
+    const ENDPOINT = 'http://18.208.185.53';
     const socket = useRef(null);
 
     useEffect(() => {

@@ -16,6 +16,7 @@ const CounselorChat = () => {
         if (message.trim()) {
             const newMessage = { text: message, sender: 'Counselor' };
             sendMessage(message); // 메시지를 서버로 전송
+            console.log("상담자가 메시지를 전달했습니다:", message)
             setMessage(''); // 입력 필드 초기화
             setMessages(messages => [...messages, newMessage]); // 메시지 목록에 새 메시지 추가
         }

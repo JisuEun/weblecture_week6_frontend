@@ -8,7 +8,7 @@ const ViewListPage = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/chats')
+        axios.get('http://18.208.185.53/api/chats')
             .then(response => {
                 console.log(response.data);
                 setSessions(response.data);

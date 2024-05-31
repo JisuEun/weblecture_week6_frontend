@@ -9,7 +9,7 @@ const ViewDetailPage = () => {
 
     useEffect(() => {
         // Fetch messages for a specific session
-        fetch(`http://localhost:3001/api/chats/${id}`)
+        fetch(`http://18.208.185.53/api/chats/${id}`)
             .then(response => response.json())
             .then(data => setMessages(data))
             .catch(error => console.error('Error fetching messages:', error));
