@@ -1,0 +1,150 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    align-items: center;
+    width: fit-content;
+    min-width: 1px;
+    max-width: 40%;
+    word-wrap: break-word;
+    animation: fadeInUp 0.3s ease-in-out; 
+}
+
+.my-message {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.other-message {
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    text-align: left;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.messages-display {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.input-section {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input-section input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #0056b3;
+}
+
+.system-message {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.chat-header {
+    background-color: #f4f4f4;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.chat-nav-button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-nav-button:hover {
+    background-color: #0056b3;
+}
+
+.session-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.session-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.session-item:hover {
+    background-color: #e2e2e2;
+}
+
+.session-content h2 {
+    margin: 0 0 5px 0;
+}
+
+.session-content p {
+    margin: 0;
+    color: #555;
+}
